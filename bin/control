@@ -105,6 +105,7 @@ function waitondeployments() {
 
 # Check if the wildfly process is running
 function isrunning() {
+
     # Check for running app
     if [ -f "$WILDFLY_PID_FILE" ]; then
       wfpid=$(cat $WILDFLY_PID_FILE);
