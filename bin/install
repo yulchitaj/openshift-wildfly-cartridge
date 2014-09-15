@@ -9,7 +9,7 @@ esac
 
 echo "$version" > "$OPENSHIFT_WILDFLY_DIR/env/OPENSHIFT_WILDFLY_VERSION"
 
-ln -s ${OPENSHIFT_WILDFLY_DIR}standalone/log ${OPENSHIFT_WILDFLY_DIR}logs
+ln -s ${OPENSHIFT_WILDFLY_DIR}/standalone/log ${OPENSHIFT_WILDFLY_DIR}/logs
 
 shopt -s dotglob
 cp -r ${OPENSHIFT_WILDFLY_DIR}/versions/${version}/template/* ${OPENSHIFT_WILDFLY_DIR}/template
