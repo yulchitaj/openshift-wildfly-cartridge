@@ -278,7 +278,7 @@ function deploy() {
 
 function start() {
   echo "Starting $cartridge_type cart"
-
+return 0;
   if marker_present "enable_jpda"
   then
     export ENABLE_JPDA=1
