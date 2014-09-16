@@ -1,6 +1,5 @@
 #!/bin/bash -eu
 
-OPENSHIFT_WILDFLY_DIR="/opt/repo"
 
 case "$1" in
   -v|--version)
