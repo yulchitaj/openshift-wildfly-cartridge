@@ -25,3 +25,6 @@ mkdir -p $OPENSHIFT_WILDFLY_DIR/jboss_cfg_backup
 cp -n ${OPENSHIFT_WILDFLY_DIR}/versions/${version}/standalone/configuration/standalone.xml $OPENSHIFT_WILDFLY_DIR/jboss_cfg_backup/standalone.xml
 
 ln -s ${OPENSHIFT_WILDFLY_DIR}versions/${version}/jboss-modules.jar ${OPENSHIFT_WILDFLY_DIR}/jboss-modules.jar
+ln -s ${OPENSHIFT_WILDFLY_DIR}/versions/${version}/standalone ${OPENSHIFT_WILDFLY_DIR}/standalone
+ln -s ${OPENSHIFT_WILDFLY_DIR}/versions/${version}/modules ${OPENSHIFT_WILDFLY_DIR}/modules
+
