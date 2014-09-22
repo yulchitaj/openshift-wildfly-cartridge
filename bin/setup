@@ -7,11 +7,10 @@ case "$1" in
 esac
 
 OPENSHIFT_WILDFLY_DIR="/opt/repo/";
-version="8";
 
 # Create additional directories required by JBOSSAS
 mkdir -p ${OPENSHIFT_HOMEDIR}/.m2
-mkdir -p ${OPENSHIFT_WILDFLY_DIR}/{template,pid,standalone/tmp,standalone/deployments,standalone/configuration,standalone/log,standalone/data}
+mkdir -p ${OPENSHIFT_WILDFLY_DIR}/{template,pid,logs,standalone/tmp,standalone/deployments,standalone/configuration,standalone/log,standalone/data}
 
 # This should be removed once OpenShift provides support for JDK 8
 mkdir -p $OPENSHIFT_WILDFLY_DIR/usr/lib/jvm
