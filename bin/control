@@ -193,6 +193,7 @@ function ismgmtup() {
 }
 
 function build() {
+  return 0;
   CONFIG_DIR="${OPENSHIFT_WILDFLY_DIR}/standalone/configuration"
   OPENSHIFT_MAVEN_MIRROR="${CONFIG_DIR}/settings.base.xml"
   if [[ $OPENSHIFT_GEAR_DNS =~ .*\.rhcloud\.com$ ]]
@@ -266,6 +267,7 @@ function build() {
 }
 
 function deploy() {
+  return 0;
   echo "Deploying WildFly"
 
   # if repo/deployments has any files in it, sync them to $WILDFLY_DEPLOYMENTS_DIR
