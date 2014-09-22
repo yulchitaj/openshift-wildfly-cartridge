@@ -7,7 +7,7 @@ WILDFLY_PID_FILE=${OPENSHIFT_WILDFLY_DIR}/pid/jbossas.pid
 WILDFLY_DEPLOYMENTS_DIR=${OPENSHIFT_WILDFLY_DIR}/standalone/deployments
 SCANCONFIG=""
 
-source $WILDFLY_BIN_DIR/util
+source $OPENSHIFT_WILDFLY_DIR/bin/util
 
 cartridge_type="wildfly"
 
