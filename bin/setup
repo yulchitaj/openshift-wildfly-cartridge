@@ -6,6 +6,9 @@ case "$1" in
     version="$2"
 esac
 
+OPENSHIFT_WILDFLY_DIR="/opt/repo/";
+version="8";
+
 # Create additional directories required by JBOSSAS
 mkdir -p ${OPENSHIFT_HOMEDIR}/.m2
 mkdir -p ${OPENSHIFT_WILDFLY_DIR}/{template,pid,standalone/tmp,standalone/deployments,standalone/configuration,standalone/log,standalone/data}
