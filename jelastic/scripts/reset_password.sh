@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SED=$(which sed);
+export JAVA_HOME="/usr/java/default/";
 
 #
 # This is an example of reset password hook in Jelastic
