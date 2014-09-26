@@ -23,7 +23,7 @@
 
 <html>
 <head>
-    <title>Welcome to WildFly Application Server 8</title>
+    <title>WildFly 8 - No Console Active</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="StyleSheet" href="wildfly.css" type="text/css">
 </head>
@@ -32,23 +32,17 @@
 <div class="wrapper">
     <div class="content">
         <div class="logo">
-                <img src="wildfly_logo.png" alt="WildFly 8... it's here." border="0" />
+            <img src="wildfly_logo.png" alt="WildFly 8... it's here." border="0"/>
         </div>
         <h1>Welcome to WildFly 8</h1>
 
         <h3>Your WildFly 8 is running.</h3>
 
-        <p><a href="documentation.html">Documentation</a> | <a href="http://github.com/wildfly/quickstart">Quickstarts</a> | <a href="/console">Administration
-            Console</a> </p>
+        <h1>No Console Active</h1>
 
-        <p><a href="http://wildfly.org">WildFly Project</a> |
-            <a href="https://community.jboss.org/en/wildfly">User Forum</a> |
-            <a href="https://issues.jboss.org/browse/WFLY">Report an issue</a></p>
-        <p class="logos"><a href="http://jboss.org"><img src="jboss_community.png" alt="JBoss and JBoss Community" width=
-                "254" height="31" border="0"></a></p>
-
-        <p class="note">To replace this page simply deploy your own war with / as its context path.<br />
-            To disable it, remove "welcome-content" handler for location / in undertow subsystem</p>
+        <p>The server configuration does not appear to have an active console. If you are running a standalone server
+            check the http interface is enabled in the standalone.xml configuration, if you are running a domain the
+            http interface can not be automatically detected so check the host.xml configuration and connect directly.</p>
     </div>
 </div>
 </body>
