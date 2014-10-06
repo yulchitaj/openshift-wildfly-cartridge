@@ -3,6 +3,8 @@
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 export JAVA_HOME="/usr/java/default/"
 
+#This line should be secret and be the same for all JBoss cluster nodes in case if clusterring is enabled.
+export OPENSHIFT_SECRET_TOKEN="justamagic"
 
 WILDFLY_BIN_DIR=${OPENSHIFT_WILDFLY_DIR}/versions/8/bin
 WILDFLY_PID_FILE=${OPENSHIFT_WILDFLY_DIR}/pid/jbossas.pid
