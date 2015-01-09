@@ -1,4 +1,5 @@
 #!/bin/bash -e
+return 0;
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 export JAVA_HOME="/usr/java/default/"
