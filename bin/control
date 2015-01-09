@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+source /etc/jelastic/environment
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 export JAVA_HOME="/usr/java/default/"
 
